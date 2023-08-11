@@ -23,13 +23,13 @@ public class DatabaseTestingWithSelenium {
         ResultSet resultSet = null; //When you send a query to the database using a Statement, the database sends back the result in the form of a ResultSet
 
         try {
-            // Establish database connection
+            // The line of code you provided is establishing a connection to a database using JDBC (Java Database Connectivity).
             connection = DriverManager.getConnection(jdbcUrl, dbUsername, dbPassword);
 
-            // Create a SQL statement
+            // Statement object that you'll use to send SQL queries to the connected database. 
             statement = connection.createStatement();
 
-            // Execute a SELECT query
+            // Execute a SELECT query and executeQuery(sqlQuery): This is a method of the Statement class that you use to execute a SELECT query. 
             String sqlQuery = "SELECT * FROM your_table WHERE some_condition";
             resultSet = statement.executeQuery(sqlQuery);
 
