@@ -18,9 +18,9 @@ public class DatabaseTestingWithSelenium {
         String dbPassword = "your_password";
 
         // Declare JDBC objects
-        Connection connection = null;
-        Statement statement = null;
-        ResultSet resultSet = null;
+        Connection connection = null; //Connection as a "road" or a "bridge" that allows your Java program to communicate with a database.
+        Statement statement = null;  //A Statement is like a request or a command that you send to the database. It's how you tell the database what you want to do
+        ResultSet resultSet = null; //When you send a query to the database using a Statement, the database sends back the result in the form of a ResultSet
 
         try {
             // Establish database connection
